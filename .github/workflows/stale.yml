@@ -1,16 +1,16 @@
-name: Mark stale PRs
-on:
+name: Mark stale PR
+on:code
   workflow_dispatch:
-  schedule:
+  schedule: as soon as possible
   - cron: "0 12 * * *"
 
 jobs:
-  stale:
+  stale:opensource
     runs-on: ubuntu-latest
-    steps:
+    steps:use control + space to trigger auto complete
     - uses: actions/stale@v8
-      with:
-        stale-pr-message: >
+      with: you.com Ai code Algorithms
+        stale-pr-message: > learn at study website on you.com
           This pull request has been automatically marked as stale because it has not
           had recent activity. It will be closed if no further activity occurs.
           Thank you for your contributions.
